@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Innovative Landing Page</title>
+  <link rel="stylesheet" href="index.css" />
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+      animation: gradient 5s ease infinite;
+    }
+    @keyframes gradient {
+      0% { background-position: 0% 50%; }
+      100% { background-position: 100% 50%; }
+    }
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      padding: 1rem;
+      background-color: rgba(255, 255, 255, 0.8);
+      backdrop-filter: blur(10px);
+    }
+    .logo {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: #333;
+    }
+    .nav-links a {
+      margin: 0 1rem;
+      text-decoration: none;
+      color: #333;
+      transition: color 0.3s;
+    }
+    .nav-links a:hover {
+      color: #007BFF;
+    }
+    .hero {
+      text-align: center;
+      padding: 5rem 1rem;
+      color: #333;
+    }
+    .hero h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+      animation: fadeIn 2s ease;
+    }
+    .hero p {
+      font-size: 1.25rem;
+      margin-bottom: 2rem;
+    }
+    .hero button {
+      padding: 0.75rem 1.5rem;
+      font-size: 1rem;
+      color: #fff;
+      background-color: #007BFF;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+    .hero button:hover {
+      background-color: #0056b3;
+    }
+    .features {
+      display: flex;
+      justify-content: space-around;
+      padding: 2rem 1rem;
+      background-color: #fff;
+    }
+    .feature {
+      text-align: center;
+      max-width: 200px;
+    }
+    .feature h2 {
+      font-size: 1.5rem;
+      margin-bottom: 0.5rem;
+    }
+    .feature p {
+      font-size: 1rem;
+    }
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background-color: rgba(255, 255, 255, 0.8);
+      backdrop-filter: blur(10px);
+    }
+  </style>
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">InnovateSite</div>
+    <nav class="nav-links">
+      <a href="#">Home</a>
+      <a href="#">Features</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Welcome to InnovateSite</h1>
+    <p>Experience the future of web design with our unique landing page.</p>
+    <button onclick="scrollToFeatures()">Discover More</button>
+  </section>
+
+  <section class="features" id="features">
+    <div class="feature">
+      <h2>Dynamic</h2>
+      <p>Engage with interactive elements and animations.</p>
+    </div>
+    <div class="feature">
+      <h2>Adaptive</h2>
+      <p>Seamlessly adjusts to any screen size and resolution.</p>
+    </div>
+    <div class="feature">
+      <h2>Innovative</h2>
+      <p>Pushes the boundaries of traditional web design.</p>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 InnovateSite. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
